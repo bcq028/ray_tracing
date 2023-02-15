@@ -21,6 +21,16 @@ class Mathf{
         if(value>end) return end;
         return value;
     }
+
+    static double random_double(){
+    return rand()/(RAND_MAX+1.0);
+}
+
+    static double random_double(double min,double max) {
+    return min+(max-min)* random_double();
+}
+
+
 };
 
 class vec3 {
@@ -54,6 +64,12 @@ public:
     return e[0] * e[0] + e[1] * e[1] + e[2] * e[2];
   }
 
+  static vec3 random() {
+    return vec3(Mathf::random_double(),Mathf::random_double(),Mathf::random_double());
+  }
+   static vec3 random(double min, double max) {
+        return vec3(Mathf::random_double(min,max), Mathf::random_double(min,max), Mathf::random_double(min,max));
+    }
   double e[3];
 };
 
@@ -110,11 +126,11 @@ inline void write_color(std::ostream &out, color pixel_color,int samples_per_pix
     auto g = pixel_color.y();
     auto b = pixel_color.z();
 
-    // Divide the color by the number of samples.
+    // Divide the color by the number of samples and gamma-correct for gamma=2.0.
     auto scale = 1.0 / samples_per_pixel;
-    r *= scale;
-    g *= scale;
-    b *= scale;
+    r = sqrt(scale * r);
+    g = sqrt(scale * g);
+    b = sqrt(scale * b);
 
     // Write the translated [0,255] value of each color component.
     out << static_cast<int>(256 * Mathf::Clamp(r, 0.0, 0.999)) << ' '
@@ -132,11 +148,12 @@ inline double d2r(double degree){
     return degree*pi/180;
 }
 
-inline double random_double(){
-    return rand()/(RAND_MAX+1.0);
-}
 
-inline double random_double(double min,double max) {
-    return min+(max-min)* random_double();
+// get a random point in a sphere
+inline vec3 random_in_unit_sphere() {
+    while (true) {
+        auto p = vec3::random(-1,1);
+        if (p.length_squared() >= 1) continue;
+        return p;
+    }
 }
-

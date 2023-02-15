@@ -238,7 +238,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/vector.tcc \
+  ../Camera.hpp
 
 
 /usr/include/c++/11/bits/vector.tcc:
@@ -286,6 +287,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/c++/11/stdexcept:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+../Camera.hpp:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
