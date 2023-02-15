@@ -6,6 +6,22 @@
 
 using std::sqrt;
 
+#include <memory>
+#include <vector>
+
+class Mathf{
+    public:
+    template <typename T>
+    static T Lerp(T start,T end,float t){
+        return start+t*(end-start);
+    }
+    template <typename T>
+    static T Clamp(T value,T start, T end){
+        if(value<start) return start;
+        if(value>end) return end;
+        return value;
+    }
+};
 
 class vec3 {
 public:
@@ -89,17 +105,38 @@ inline vec3 normalize(vec3 v)  {
     return v / v.length();
 }
 
-inline void write_color(std::ostream &out, color pixel_color) {
+inline void write_color(std::ostream &out, color pixel_color,int samples_per_pixel) {
+    auto r = pixel_color.x();
+    auto g = pixel_color.y();
+    auto b = pixel_color.z();
+
+    // Divide the color by the number of samples.
+    auto scale = 1.0 / samples_per_pixel;
+    r *= scale;
+    g *= scale;
+    b *= scale;
+
     // Write the translated [0,255] value of each color component.
-    out << static_cast<int>(255.999 * pixel_color.x()) << ' '
-        << static_cast<int>(255.999 * pixel_color.y()) << ' '
-        << static_cast<int>(255.999 * pixel_color.z()) << '\n';
+    out << static_cast<int>(256 * Mathf::Clamp(r, 0.0, 0.999)) << ' '
+        << static_cast<int>(256 * Mathf::Clamp(g, 0.0, 0.999)) << ' '
+        << static_cast<int>(256 * Mathf::Clamp(b, 0.0, 0.999)) << '\n';
 }
 
-class Mathf{
-    public:
-    template <typename T>
-    static T Lerp(T start,T end,float t){
-        return start+t*(end-start);
-    }
-};
+
+
+
+
+const double pi=3.14159265;
+
+inline double d2r(double degree){
+    return degree*pi/180;
+}
+
+inline double random_double(){
+    return rand()/(RAND_MAX+1.0);
+}
+
+inline double random_double(double min,double max) {
+    return min+(max-min)* random_double();
+}
+

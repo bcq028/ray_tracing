@@ -209,8 +209,63 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/c++/11/vector:
+
+/usr/include/c++/11/bits/align.h:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/memory:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -241,6 +296,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/wctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/c++/11/utility:
 
 /usr/include/errno.h:
 
@@ -284,6 +341,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
+/usr/include/c++/11/bits/invoke.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/time.h:
@@ -295,6 +354,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/sched.h:
+
+/usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
@@ -313,6 +374,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/endian.h:
 
@@ -358,6 +421,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/usr/include/c++/11/bits/shared_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/11/bits/allocator.h:
@@ -365,6 +430,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/c++/11/system_error:
 
@@ -378,6 +445,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 
 /usr/include/features.h:
 
+/usr/include/c++/11/bits/atomic_base.h:
+
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/c++/11/bits/ios_base.h:
@@ -390,6 +459,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 
 ../hittable.hpp:
 
+/usr/include/c++/11/bits/unique_ptr.h:
+
 /usr/include/c++/11/ostream:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
@@ -401,6 +472,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/stdlib.h:
+
+/usr/include/c++/11/pstl/execution_defs.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -417,6 +490,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -452,6 +527,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
@@ -469,6 +546,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
 
 ../Sphere.hpp:
 
@@ -494,11 +573,15 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -526,6 +609,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 
 /usr/include/c++/11/bits/move.h:
 
+/usr/include/c++/11/tuple:
+
 /usr/include/c++/11/type_traits:
 
 /usr/include/c++/11/debug/assertions.h:
@@ -543,6 +628,8 @@ CMakeFiles/RayTracing.dir/main.cc.o: ../main.cc \
 /usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/c++/11/bit:
 
 /usr/include/c++/11/cstdlib:
 
