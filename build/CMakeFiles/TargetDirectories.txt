@@ -1,3 +1,0 @@
-/home/moona/c/weekend/build/CMakeFiles/RayTracing.dir
-/home/moona/c/weekend/build/CMakeFiles/edit_cache.dir
-/home/moona/c/weekend/build/CMakeFiles/rebuild_cache.dir

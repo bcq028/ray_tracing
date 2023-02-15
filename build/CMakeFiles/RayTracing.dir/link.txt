@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/RayTracing.dir/main.cc.o -o RayTracing  -fsanitize=undefined 
