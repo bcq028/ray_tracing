@@ -2,7 +2,7 @@
 
 class sphere : public hittable {
 public:
-  sphere(point3 cen, double r) : center(cen), radius(r){};
+  sphere(point3 cen, double r,std::shared_ptr<material> m) : center(cen), radius(r),mat_ptr(m){};
 
   virtual bool hit(const Ray &r, double t_min, double t_max,
            hit_record &rec) const override {
@@ -27,6 +27,7 @@ public:
 
     rec.t = root;
     rec.p = r.at(rec.t);
+    rec.mat_ptr=mat_ptr;
     rec.set_face_normal(r,(rec.p - center) / radius);
     return true;
 
@@ -35,4 +36,5 @@ public:
 public:
   point3 center;
   double radius;
+  std::shared_ptr<material> mat_ptr;
 };

@@ -1,10 +1,12 @@
 #pragma once
 #include "Ray.hpp"
 
+class material;
 
 struct hit_record {
     point3 p;
     vec3 normal;
+    std::shared_ptr<material> mat_ptr;
     double t;
     bool front_face;
     inline void set_face_normal(const Ray&r,const vec3&outward_normal){
